@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      
+        Indice &middot; Multicreto
+      
+    </title>
+    
+  </head>
+
+
+<body>
+    <div>
+
+    </div>
+    <script src="./libs/js/jquery-3.2.1.min.js"></script>
+    <script src="./libs/js/moment.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "http://localhost:3000/api/materiaprima",
+                "method": "GET",
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Postman-Token": "dc85027c-1e2e-f98d-634c-7e40d0b4a553"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+        })
+
+    </script>
+</body>
+</html>
