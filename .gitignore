@@ -4,4 +4,6 @@ app.js
 server/config/config.json
 playground/
 public/js/libs
-
+public/assets/js/libs
+public/assets/css
+public/assets/fonts

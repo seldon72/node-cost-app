@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+      
+        Indice &middot; Multicreto
+      
+    </title>
+    
+  </head>
+
+
+<body>
+    <div>
+        <table class="table" data-sort="table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" class="select-all" id="selectAll"></th>
+                    <th>Clave</th>
+                    <th>Descripcion</th>
+                    <th>Unidad</th>
+                    <th>Costo</th>
+                    <th>Actualizado</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/libs/jquery-3.2.1.min.js"></script>
+    <script src="./js/libs/moment.js"></script>
+    <script src="./js/libs/mustache.js"></script>
+    <script src="./js/mp.js"></script>
+
+    <script id="data-template" type="text/template">
+        <tr>
+            <td><input type="checkbox" class="select-row"></td>
+            <td><a href="#editModal" data-toggle="modal">{{data0}}</a></td>
+            <td>{{data1}}</td>
+            <td>{{data2}}</td>
+            <td>{{data3}}</td>
+            <td>{{data4}}</td>
+        </tr>
+    </script>
+
+</body>
+</html>

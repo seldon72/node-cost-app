@@ -1,7 +1,8 @@
 
+
 $(document).ready(function(){
-    var planta = 'Piezas Especiales'
-    var url = 'api/materiaprima/planta/' + planta;
+    
+    var url = '../api/materiaprima/planta/' + planta;
     
     var settings = {
         "async": true,
@@ -42,30 +43,4 @@ $(document).ready(function(){
     });
 });
 
-function myFunction() {
-    var url = "/api/otros"
-    var data = {
-        "planta" : "Postes de Concreto",
-        "desc" : "AGUA CURADO",
-        "uom" : "LT",
-        "unitCost" : 0.0300,
-        "billId" : "4"
-        }
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": url,
-        "method": "POST",
-        "headers": {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-cache"
-        },
-        "processData": false,
-        "data": JSON.stringify(data)
-      }
-      
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      });
 
-}

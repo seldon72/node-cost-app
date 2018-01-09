@@ -2,6 +2,7 @@ const _ = require('lodash');
 const {ObjectID} = require('mongodb');
 
 var {MateriaPrima} = require('../models/mp');
+var {validPlanta} = require('../utils/validation')
 
 module.exports = function(app, mongoose) {
     app.post('/api/materiaprima', (req, res) => {
@@ -84,4 +85,20 @@ module.exports = function(app, mongoose) {
             }).catch((e) => res.status(400).send());
         
     });
+
+    app.get('/api/materiaprima/planta/:planta', (req, res) => {
+        var planta = req.params.planta;
+        if (!validPlanta(planta)) {
+            return res.status(404).send();
+        }
+    
+        MateriaPrima.find({planta: planta, isDeleted: false})
+        .then((mp) => {
+            if (!mp) {
+                return res.status(404).send();
+            }
+            res.send({mp});
+        }).catch((e) => res.status(400).send());
+    })
+
 };

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+
+        Mano de Obra &middot; Piezas de Concreto
+
+    </title>
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="../assets/css/toolkit-inverse.css" rel="stylesheet">
+    <link href="../assets/css/application.css" rel="stylesheet">
+
+  </head>
+
+
+<body>
+  <div class="container">
+    <div class="row">
+<!--  Sidebar    -->
+      <div class="col-md-3 sidebar">
+
+        <nav class="sidebar-nav">
+          <div class="sidebar-header">
+            <button class="nav-toggler nav-toggler-md sidebar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggleable-md">
+              <span class="sr-only">Toggle nav</span>
+            </button>
+
+            <a class="sidebar-brand img-responsive" href="../index.html">
+              <img src="../assets/img/logo_multicreto.png">
+            </a>
+
+          </div>
+
+          <div class="collapse nav-toggleable-md" id="nav-toggleable-md">
+            <hr class="visible-xs mt-3">
+            <ul class="nav nav-pills nav-stacked flex-column">
+              <li class="nav-header">Productos</li>
+                <li class="nav-item">
+                  <a class="nav-link " href="producto.html">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="inventario.html">Inventario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "href="proyecto.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Mano de Obra</a>
+                </li>
+
+              <li class="nav-header">Insumos</li>
+                <li class="nav-item">
+                  <a class="nav-link " href="materiaprima.html">Materia Prima</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="otros.html">Otros Insumos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="herramientas.html">Herramientas</a>
+                </li>
+            </ul>
+            <hr class="visible-xs mt-3">
+          </div>
+        </nav>
+      </div> <!--  End Sidebar    -->
+
+<!--  Content    -->
+      <div class="col-md-9 content">
+<!--    Dashhead    -->
+        <div class="dashhead">
+          <div class="dashhead-titles">
+            <h6 class="dashhead-subtitle">Mano de Obra</h6>
+            <h2 class="dashhead-title">Piezas de Concreto</h2>
+          </div>
+          <div class="btn-toolbar dashhead-toolbar">
+          </div>
+        </div>
+<!--    Action Search and Buttons    -->
+        <div class="flextable table-actions">
+          <div class="flextable-item flextable-primary">
+            <div class="btn-toolbar-item input-with-icon">
+              <input type="text" class="form-control input-block" placeholder="Filtra tabla" id="busca">
+              <span class="icon icon-magnifying-glass"></span>
+            </div>
+          </div>
+          <div class="flextable-item">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#addModal">
+                <span class="icon icon-circle-with-plus"></span>
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                <span class="icon icon-erase"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+<!--    Data Table    -->
+        <div class="table-responsive">
+          <table class="table table-hover" data-sort="table">
+            <thead>
+              <tr>
+                <th><input type="checkbox" class="select-all" id="selectAll"></th>
+                <th>Clave</th>
+                <th>Descripcion</th>
+                <th>Unidad</th>
+                <th>Costo</th>
+                <th>Categoria</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><input type="checkbox" class="select-row"></td>
+                <td><a href="#editModal" data-toggle="modal">Data1</a></td>
+                <td>Data2</td>
+                <td>Data2</td>
+                <td>Data2</td>
+                <td>Data2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div> <!-- End Content -->
+    </div>   <!-- End Row -->
+  </div>     <!-- End Container -->
+
+  <script src="../assets/js/libs/tether.min.js"></script>
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/toolkit.js"></script>
+  <script src="../assets/js/libs/tablesorter.min.js"></script>
+  <script src="../assets/js/libs/jquery.filtertable.min.js"></script>
+  <script src="../assets/js/manoobra.js"></script>
+
+</body>
+</html>
