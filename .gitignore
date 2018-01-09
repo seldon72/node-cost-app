@@ -3,5 +3,5 @@ testData/
 app.js
 server/config/config.json
 playground/
-public/libs
+public/js/libs
 
